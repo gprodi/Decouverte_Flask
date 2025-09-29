@@ -42,6 +42,7 @@ venv\Scripts\activate      # Windows
 # Installer Flask
 pip install flask
 Flask installe automatiquement :
+```
 
 Jinja (moteur de templates)
 
@@ -53,9 +54,11 @@ ItsDangerous (intégrité des données)
 
 Click (CLI pour scripts Python)
 
+---
+
 ### 2. Exemple minimal
 Un "Hello World" en Flask :
-
+```bash
 python
 Copier le code
 from flask import Flask
@@ -78,10 +81,13 @@ Puis ouvre dans ton navigateur :
 cpp
 Copier le code
 http://127.0.0.1:5000
+```
+---
 
 ### 3. Tests
 Flask facilite l’ajout de tests automatisés pour vérifier ton code :
 
+```bash
 python
 Copier le code
 def test_home(client):
@@ -89,7 +95,7 @@ def test_home(client):
     assert response.status_code == 200
     assert b"Hello, Flask!" in response.data
 ⚡ Les tests permettent d’avancer par itérations agiles sans tout casser.
-
+```
 ### 🔌 Extensions utiles pour Flask
 Voici quelques extensions populaires pour enrichir tes applications :
 
@@ -103,3 +109,5 @@ Flask-Caching	Mise en cache pour améliorer les performances
 
 ### 📚 Sources
 Datascientest – Avantages et fonctionnement de Flask
+
+---
